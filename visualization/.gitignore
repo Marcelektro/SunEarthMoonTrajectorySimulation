@@ -1,3 +1,5 @@
 .venv/
 venv/
 
+# default output file
+output.png
