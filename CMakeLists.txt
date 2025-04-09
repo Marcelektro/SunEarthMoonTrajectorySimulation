@@ -12,3 +12,16 @@ add_executable(simulate
 target_link_libraries(simulate
         m
 )
+
+
+add_executable(visualize
+        src/main_realtime.c
+        src/simulate.c src/simulate.h
+        src/gl_trail.c src/gl_trail.h
+)
+
+target_link_libraries(visualize
+        m
+        GL glut glfw
+)
+
